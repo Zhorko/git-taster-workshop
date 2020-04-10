@@ -1,0 +1,26 @@
+mkdir lgthw_git_basics
+cd lgthw_git_basics
+git init
+cd .git
+ls
+cat HEAD
+cat config
+cd ..
+git log
+ls .git/refs/heads/master
+git status
+touch mycode.py
+git status
+git add mycode.py
+git status
+git log
+git commit
+git log
+vi mycode.py
+git diff
+git status
+git commit -a
+git status
+git log
+cd ..
+rm -rf lgthw_git_basics

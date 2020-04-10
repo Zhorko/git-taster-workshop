@@ -1,0 +1,26 @@
+mkdir lgthw_git_clone
+cd lgthw_git_clone
+git clone https://github.com/ianmiell/shutit
+cd shutit
+ls .git
+grep -A2 'remote "origin"' .git/config
+git log
+git log --oneline
+git log --oneline --graph
+cd ..
+git clone shutit cloned_shutit
+cd cloned_shutit
+ls .git
+rm -rf ../cloned_shutit/*
+ls .git
+git status
+git add .
+git status
+git reset --mixed
+git status
+rm -rf ../cloned_shutit/*
+git add .
+git reset --hard
+git status
+cd ../..
+rm -rf lgthw_git_clone

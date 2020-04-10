@@ -1,0 +1,38 @@
+mkdir lgthw_git_branch_1
+cd lgthw_git_branch_1
+git init
+echo newfile > file1
+git add file1
+git commit -m 'new file1'
+git status
+git branch newfeature
+git status
+git branch
+echo Line_master1 >> file1
+git commit -am 'master change'
+git log --decorate --graph --oneline
+git checkout newfeature
+cat file1
+echo Line_feature1 >> file1
+git commit -am 'feature change'
+git log --decorate --graph --oneline
+git log --decorate --graph --oneline --all
+git checkout master
+cat file1
+cd ..
+rm -rf lgthw_git_branch_1
+git status
+mkdir lgthw_git_branch_2
+cd lgthw_git_branch_2
+git clone https://github.com/ianmiell/shutit.git
+cd shutit
+git log
+git checkout e36355ed00ac3af009d7113a9dd281c269a79afd
+git status
+git tag i_was_here
+git checkout e36355ed00ac3af009d7113a9dd281c269a79afd
+git branch -f newfeature
+git checkout master
+git tag remember_to_tell_bob_to_rewrite_this newfeature
+cd ..
+rm -rf lgthw_git_branch_2
