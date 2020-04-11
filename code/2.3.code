@@ -1,0 +1,88 @@
+mkdir -p lgthw_pushing
+cd lgthw_pushing
+mkdir git_origin
+cd git_origin
+git init
+echo 'first commit' > file1
+git add file1
+git commit -am file1
+cd ..
+git clone git_origin git_clone
+cd git_origin
+git branch -a -v
+cd ../git_clone
+git branch -a -v
+cd ..
+cd git_clone
+git checkout -b abranch
+echo 'cloned abranch commit' >> file1
+git commit -am 'cloned abranch commit'
+git push origin abranch
+cd ..
+rm -rf git_origin git_clone
+mkdir git_origin
+cd git_origin
+git init
+echo 'first commit' > file1
+git add file1
+git commit -am file1
+cd ..
+git clone git_origin git_clone
+cd git_clone
+git checkout -b abranch
+echo 'cloned abranch commit' >> file1
+git commit -am 'cloned abranch commit'
+cd ../git_origin
+git checkout -b abranch
+echo 'origin abranch commit' >> file1
+git commit -am 'origin abranch commit'
+cd ../git_clone
+git push origin abranch:abranch
+git fetch origin
+git branch -v -a
+git merge remotes/origin/abranch
+cd ..
+rm -rf git_origin git_clone
+mkdir git_origin
+cd git_origin
+git init
+echo 'first commit' > file1
+git add file1
+git commit -am file1
+cd ..
+git clone git_origin git_clone
+cd git_origin
+git checkout -b abranch
+echo 'origin abranch commit' >> file1
+git commit -am 'cloned abranch commit'
+git branch -a
+cd ../git_clone
+git branch -a
+git remote -v
+git fetch origin
+git branch -a
+git branch
+git checkout abranch
+git branch -a -vv
+git push
+rm -rf git_origin git_clone
+mkdir git_origin
+cd git_origin
+git init
+echo 'first commit' > file1
+git add file1
+git commit -am file1
+cd ..
+git clone git_origin git_clone
+cd git_clone
+git checkout -b abranch
+echo 'origin abranch commit' >> file1
+git commit -am 'cloned abranch commit'
+git push
+git branch -vv
+git push origin abranch
+git branch -vv
+git push -u origin abranch
+git branch -vv
+cd ..
+rm -rf lgthw_pushing

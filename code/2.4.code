@@ -1,0 +1,21 @@
+git clone https://github.com/YOURUSERNAME/git-taster-session
+cd git-taster-session
+git checkout -b myfirstbranch
+git status
+echo 'my change to the README' >> README.md
+git commit -am 'my change to the README'
+git push -u origin myfirstbranch
+echo 'another change to the README' >> README.md
+git commit -am 'another change to the README'
+git push -u origin myfirstgitbranch:myfirstgitbranch
+git push -u origin myfirstgitbranch:
+git branch tmpbranch
+git checkout tmpbranch
+echo 'a temp change on tmpbranch' >> README.md
+git commit -am 'a temp change on tmpbranch'
+git push origin tmpbranch:tmpbranch
+git push origin :tmpbranch
+git branch -d mybranch
+git branch -d abranch
+cd ..
+rm -rf git-taster-session

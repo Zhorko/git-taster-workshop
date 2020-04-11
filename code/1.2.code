@@ -10,7 +10,6 @@ git log
 ls .git/refs/heads/master
 git status
 touch mycode.py
-git status
 git add mycode.py
 git status
 git log
