@@ -1,0 +1,11 @@
+1) Install git and set up your config for user.name and user.email using the 'git config --global' command.
+
+2) Create a git repository, add and commit a file to the repository, commit some more changes, and view the changes using the 'git log' command.
+
+3) Using the git repo created in 2), make a branch, and check some changes in. Switch back to the 'master' branch and make some more changes. Create a tag at the last change made on the master branch. Switch to the other branch.
+
+4) Merge the two branches together. View the git log for all branches with the --graph and --oneline tags.
+
+4) Clone a large repository from GitHub with a complex history, and look at the history with `git log`. Experiment with some other git log flags.
+
+https://github.com/kubernetes/kubernetes is a good example to look at.
