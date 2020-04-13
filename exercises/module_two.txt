@@ -1,0 +1,21 @@
+1) Make a pull request
+
+- Sign up/into GitHub
+
+https://github.com
+
+- Fork the repository
+
+https://github.com/containersolutions/git-taster-workshop
+
+- Make a branch on the forked repository
+
+- Make sure you’re on that branch
+
+- Add a line to 'records/trained_users.txt' with your name on it
+
+- Commit that line
+
+- Push the change
+
+- Make the pull request
