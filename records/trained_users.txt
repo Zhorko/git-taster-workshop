@@ -1,1 +1,2 @@
-Ian Miell - change on a file on branch1
+Ian Miell - change on a file on branch1 conflicting change
+
