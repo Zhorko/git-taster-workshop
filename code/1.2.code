@@ -1,5 +1,5 @@
-mkdir lgthw_git_basics
-cd lgthw_git_basics
+mkdir gtw_git_basics
+cd gtw_git_basics
 git init
 cd .git
 ls
@@ -22,4 +22,4 @@ git commit -a
 git status
 git log
 cd ..
-rm -rf lgthw_git_basics
+rm -rf gtw_git_basics

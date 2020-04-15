@@ -1,5 +1,5 @@
-mkdir -p lgthw_merging
-cd lgthw_merging
+mkdir -p gtw_merging
+cd gtw_merging
 git init
 echo A > file1
 git add file1
@@ -27,4 +27,4 @@ git merge experimental
 git commit -am 'merged experimental in'
 git log --all --oneline --graph --decorate
 cd ..
-rm -rf lgthw_merging
+rm -rf gtw_merging

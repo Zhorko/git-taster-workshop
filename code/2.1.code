@@ -1,5 +1,5 @@
-mkdir -p lgthw_pull
-cd lgthw_pull
+mkdir -p gtw_pull
+cd gtw_pull
 mkdir git_origin
 cd git_origin
 git init
@@ -28,4 +28,4 @@ cat .git/refs/remotes/origin/master
 git merge origin/master
 git log
 cd ../..
-rm -rf lgthw_pull
+rm -rf gtw_pull

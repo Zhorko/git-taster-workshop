@@ -1,5 +1,5 @@
-mkdir -p lgthw_remotes
-cd lgthw_remotes
+mkdir -p gtw_remotes
+cd gtw_remotes
 mkdir git_origin
 cd git_origin
 git init
@@ -25,4 +25,4 @@ git merge alice/master
 cat file1
 git merge remotes/alice/master
 cd ../..
-rm -rf lgthw_remotes
+rm -rf gtw_remotes

@@ -1,5 +1,5 @@
-mkdir lgthw_git_branch_1
-cd lgthw_git_branch_1
+mkdir gtw_git_branch_1
+cd gtw_git_branch_1
 git init
 echo newfile > file1
 git add file1
@@ -20,19 +20,22 @@ git log --decorate --graph --oneline --all
 git checkout master
 cat file1
 cd ..
-rm -rf lgthw_git_branch_1
+rm -rf gtw_git_branch_1
 git status
-mkdir lgthw_git_branch_2
-cd lgthw_git_branch_2
-git clone https://github.com/ianmiell/shutit.git
-cd shutit
+mkdir gtw_git_branch_2
+cd gtw_git_branch_2
+git clone https://github.com/ContainerSolutions/git-taster-workshop
+cd git-taster-workshop
 git log
-git checkout e36355ed00ac3af009d7113a9dd281c269a79afd
+git checkout 783141aa3b258db5959bc57e805fe0b42cea33e5
 git status
 git tag i_was_here
-git checkout e36355ed00ac3af009d7113a9dd281c269a79afd
+git log --decorate --graph --oneline --all
 git branch -f newfeature
+git log --decorate --graph --oneline --all
 git checkout master
+git log --decorate --graph --oneline --all
 git tag remember_to_tell_bob_to_rewrite_this newfeature
-cd ..
-rm -rf lgthw_git_branch_2
+git log --decorate --graph --oneline --all
+cd ../..
+rm -rf gtw_git_branch_2
