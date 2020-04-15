@@ -3,5 +3,3 @@
 Student materials for Container Solutions' Git Taster Session
 
 See: https://info.container-solutions.com/git-taster-20200415
-
-some testing changes made

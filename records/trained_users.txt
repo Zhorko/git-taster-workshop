@@ -1,1 +1,3 @@
 Ian Miell - change on a file on branch1 - resolved conflicting change
+
+George Zhuzha - that is the only change :)
