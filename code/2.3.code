@@ -4,6 +4,7 @@ mkdir git_origin
 cd git_origin
 git init
 echo 'first commit' > file1
+cat file1
 git add file1
 git commit -am file1
 cd ..
@@ -12,11 +13,11 @@ cd git_origin
 git branch -a -v
 cd ../git_clone
 git branch -a -v
-cd ..
-cd git_clone
 git checkout -b abranch
 echo 'cloned abranch commit' >> file1
+cat file1
 git commit -am 'cloned abranch commit'
+git push origin
 git push origin abranch
 cd ..
 rm -rf git_origin git_clone
@@ -25,6 +26,7 @@ cd git_origin
 git init
 echo 'first commit' > file1
 git add file1
+cat file1
 git commit -am file1
 cd ..
 git clone git_origin git_clone
@@ -35,11 +37,13 @@ git commit -am 'cloned abranch commit'
 cd ../git_origin
 git checkout -b abranch
 echo 'origin abranch commit' >> file1
+cat file1
 git commit -am 'origin abranch commit'
 cd ../git_clone
 git push origin abranch:abranch
 git fetch origin
 git branch -v -a
+git log --oneline --graph --decorate --all
 git merge remotes/origin/abranch
 cd ..
 rm -rf git_origin git_clone
